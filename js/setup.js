@@ -1,6 +1,5 @@
 'use strict';
 
-
 // откроем скрытое окно выбора персонажей Покажите блок .setup, убрав в JS-коде у него класс .hidden
 var settingsWindow = document.querySelector('.setup');
 settingsWindow.classList.remove('hidden');
@@ -15,7 +14,6 @@ var WIZARDS_QUANTYTI = 4;
 var similarCharacters = document.querySelector('.setup-similar');
 var similarListElement = similarCharacters.querySelector('.setup-similar-list');
 var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
-
 
 var getRandomArrayElement = function (arr) {
   var randomIndexNumber = Math.floor(Math.random() * arr.length);
@@ -49,15 +47,11 @@ var renderWizard = function (wizard) {
   return randomWizard;
 };
 
-
 var wizards = generateWizardsParameters(WIZARDS_QUANTYTI);
-
 var fragment = document.createDocumentFragment();
-
 for (var i = 0; i < WIZARDS_QUANTYTI; i++) {
   fragment.appendChild(renderWizard(wizards[i]));
 }
 
 similarListElement.appendChild(fragment);
-
 similarCharacters.classList.remove('hidden');

@@ -53,6 +53,6 @@ for (var i = 0; i < WIZARDS_QUANTYTI; i++) {
   fragment.appendChild(renderWizard(wizards[i]));
 }
 
-similarListElement.textContent＝ '';
+similarListElement.textContent = '';
 similarListElement.appendChild(fragment);
 similarCharacters.classList.remove('hidden');

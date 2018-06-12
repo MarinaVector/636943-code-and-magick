@@ -1,6 +1,6 @@
 'use strict';
 
-// откроем скрытое окно выбора персонажей Покажите блок .setup, убрав в JS-коде у него класс .hidden
+// откроем скрытое окно выбора персонажей: Покажите блок .setup, убрав в JS-коде у него класс .hidden
 var settingsWindow = document.querySelector('.setup');
 settingsWindow.classList.remove('hidden');
 

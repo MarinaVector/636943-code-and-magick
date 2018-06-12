@@ -4,7 +4,7 @@
 var settingsWindow = document.querySelector('.setup');
 settingsWindow.classList.remove('hidden');
 
-//зададим переменные
+// зададим переменные
 var WIZARD_NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
 var WIZARD_SURNAMES = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвин'];
 var COAT_COLORS = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
@@ -53,5 +53,6 @@ for (var i = 0; i < WIZARDS_QUANTYTI; i++) {
   fragment.appendChild(renderWizard(wizards[i]));
 }
 
+similarListElement.textContent＝ '';
 similarListElement.appendChild(fragment);
 similarCharacters.classList.remove('hidden');
